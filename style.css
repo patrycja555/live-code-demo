@@ -1,0 +1,42 @@
+.main-container {
+width:66%;
+margin: 0 auto;
+max-width: 1158px;
+}
+
+.image-and-text{ 
+display: flex;
+gap: 6%;
+align-items: center;
+}
+
+h3{
+    margin: top 0;
+}
+
+.image-and-text__image{
+    width: 50%;
+    aspect-ratio: 560/504;
+    object-fit: cover;
+}
+
+.image-and-text__text{
+    width: 50%;
+}
+
+@media (orientation:portrait) and (max-width:640px){
+    .main-container{
+        width: 85%;
+    }
+    .image-and-text{
+        display: block;
+    }
+    .image-and-text__text{
+        width: 100%;
+    }
+    .image-and-text__image{
+        width:100%;
+        aspect-ratio: 1/0;
+        margin-bottom: 8yw;
+    }
+}
